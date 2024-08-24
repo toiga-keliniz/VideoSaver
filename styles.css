@@ -143,11 +143,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-#widgetApiIframe {
-    border-radius: 5px;
-    overflow: hidden;
-}
-
 .info-section {
     background-color: #222;
     border-radius: 10px;
