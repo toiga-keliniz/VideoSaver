@@ -17,6 +17,7 @@ body {
     align-items: center;
     justify-content: space-between;
     backdrop-filter: blur(10px);
+    flex-wrap: wrap;
 }
 
 .site-name {
@@ -24,26 +25,93 @@ body {
     font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
+    margin-right: 10px;
 }
 
-.toolbar .button {
+.language-selector {
+    position: relative;
+    display: inline-block;
+}
+
+#languageButton {
     background: rgba(26, 14, 14, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: #f0e000;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 8px;
-    text-decoration: none;
     font-size: 1em;
-    margin-left: 10px;
     transition: background 0.3s, box-shadow 0.3s;
     backdrop-filter: blur(1px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.toolbar .button:hover {
+#languageButton:hover {
     background: rgba(93, 93, 93, 0.3);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.lang-icon {
+    display: none;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #2a2a2a;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+    border-radius: 5px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.dropdown-content a {
+    color: #f0f0f0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #3a3a3a;
+}
+
+.show {
+    opacity: 1;
+    max-height: 200px;
+}
+
+@media (max-width: 600px) {
+    .toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .site-name {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .language-selector {
+        text-align: center;
+    }
+
+    #languageButton {
+        width: 100%;
+    }
+
+    .lang-text {
+        display: none;
+    }
+
+    .lang-icon {
+        display: inline;
+    }
 }
 
 .content {
@@ -113,30 +181,6 @@ h1 {
     padding: 10px 20px;
     text-align: center;
     border-top: 1px solid #333;
-}
-
-input[type="text"] {
-    background-color: #333;
-    border: 1px solid #666;
-    color: #f0e000;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #555;
-    border: 1px solid #888;
-    color: #f0e000;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #444;
 }
 
 p {
