@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no">
     <title>YouVideoDownloader - Скачать видео с YouTube в 8K | Бесплатный конвертер в MP3</title>
     <meta name="description"
         content="Бесплатно скачивайте видео с YouTube в качестве до 8K. Быстрый онлайн конвертер YouTube в MP3. Поддержка 4K, HD. Без регистрации. Скачивайте видео и музыку с YouTube легко!">
@@ -289,11 +289,10 @@
 </body>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        iFrameResize({ log: true }, '#widgetApiIframe');
+        iFrameResize({ log: false }, '#widgetApiIframe');
     });
 
     document.addEventListener('DOMContentLoaded', () => {
-        // Load language from localStorage
         const savedLang = localStorage.getItem('language') || 'ru';
         changeLanguage(savedLang);
     });
@@ -344,7 +343,7 @@
         document.querySelectorAll('.info-section p')[6].innerHTML =
             'We strive to make the download and conversion process as convenient and fast as possible. In just a few clicks, you can download and convert files with ease.';
         document.getElementById('languageButton').querySelector('.lang-text').textContent = 'Language';
-        document.querySelector('.footer p').textContent = 'YT Downloader 2024-2025. All rights reserved.';
+        document.querySelector('.footer p').textContent = 'YT Downloader 2024. All rights reserved.';
         document.querySelector('meta[name="description"]').setAttribute('content', 'Download YouTube videos in high quality up to 8K. Fast online converter to MP3. No registration.');
     }
 
