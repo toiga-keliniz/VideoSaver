@@ -1,11 +1,18 @@
 function checkAndRedirect() {
     if (!localStorage.getItem('languageSelected')) {
         var userLang = navigator.language || navigator.userLanguage;
-        if (userLang.startsWith('ru') && !window.location.pathname.includes('/ru/')) {
-            window.location.href = "/ru/index.html";
-        } else if (!userLang.startsWith('ru') && !window.location.pathname.includes('/')) {
-            window.location.href = "/index.html";
+        var path = window.location.pathname;
+
+        if (userLang.startsWith('ru')) {
+            if (!path.startsWith('/ru/')) {
+                window.location.href = "/ru/";
+            }
+        } else {
+            if (!path.startsWith('/ru/')) {
+                window.location.href = "/";
+            }
         }
+
         localStorage.setItem('languageSelected', 'true');
     }
 }
