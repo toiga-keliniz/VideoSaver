@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouVideoDownloader - Download YouTube videos in 8K | Free MP3 Converter</title>
+    <meta name="description"
+        content="Download YouTube videos for free in quality up to 8K. Fast online YouTube to MP3 converter. Supports 4K, HD. No registration.">
+    <meta name="keywords"
+        content="YouTube downloader, download YouTube videos, YouTube to MP3 converter, 4K video, 8K video, free YouTube download, YouTube to MP3">
+    <link rel="canonical" href="https://youvideodownloader.online/en/">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="YouVideoDownloader - Download YouTube videos in 8K | MP3 Converter">
+    <meta property="og:description"
+        content="Download YouTube videos for free in quality up to 8K. Fast online YouTube to MP3 converter. No registration.">
+    <meta property="og:url" content="https://youvideodownloader.online/en/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="YouVideoDownloader - Download YouTube videos in 8K">
+    <meta name="twitter:description" content="Download YouTube videos in high quality for free. Convert to MP3.">
+    <link rel="alternate" hreflang="ru" href="https://youvideodownloader.online/ru/">
+    <link rel="alternate" hreflang="en" href="https://youvideodownloader.online/en/">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.9/iframeResizer.min.js"></script>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site_en.webmanifest">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/language-redirect.js"></script>
+    <meta name="theme-color" content="#1a1a1a">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-42KZEEHR3R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-42KZEEHR3R');
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebApplication",
+      "name": "YouVideoDownloader",
+      "url": "https://youvideodownloader.online/en/",
+      "description": "Download YouTube videos in high quality up to 8K. Convert videos to audio formats.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "All"
+    }
+    </script>
+</head>
+
+<body>
+    <header class="toolbar">
+        <a href="index.html" class="site-name">YouVideoDownloader</a>
+        <div class="language-selector">
+            <button id="languageButton" class="button">
+                <span class="lang-text">Language</span>
+                <span class="lang-icon">🌐</span>
+            </button>
+            <div id="languageDropdown" class="dropdown-content">
+                <a href="/ru/index.html" data-lang="ru">Русский</a>
+                <a href="/en/index.html" data-lang="en">English</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="info-section">
+            <h2>Instructions</h2>
+            <p><span class="highlight">1. Paste the video URL</span> — First, copy the link to the video on YouTube you
+                want to download. Paste it into the input field on our site.</p>
+            <p><span class="highlight">2. Select format</span> — After pasting the link, choose the desired format and
+                video quality. We support various formats, including MP4 and MP3.</p>
+            <p><span class="highlight">3. Click "Download"</span> — Click the button to start the download process.
+                Depending on the selected format and file size, it may take some time.</p>
+            <p><span class="highlight">4. Download the file</span> — Once processing is complete, a download link will
+                appear. Click it to download the video to your device.</p>
+        </section>
+
+        <div class="widget-container">
+            <h1>YouTube Video Downloader</h1>
+            <iframe id="widgetApiIframe" src="https://loader.to/api/widget?adUrl=https://myAdurl.com"></iframe>
+        </div>
+
+        <section class="info-section">
+            <h2>About Our Site</h2>
+            <p><span class="highlight">YouVideoDownloader</span> provides you with the ability to download YouTube
+                videos in exceptional quality, including 4K and 8K resolutions. Enjoy stunning clarity and detail on any
+                device.</p>
+            <p>Our service also offers a simple way to convert videos to audio files. You can choose from various
+                formats, including popular MP3 and WAV, to create the perfect audio collection.</p>
+            <p>We strive to make the download and conversion process as convenient and fast as possible. In just a few
+                clicks, you can download and convert files with ease.</p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>YT Downloader 2024. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        iFrameResize({ log: false }, '#widgetApiIframe');
+    });
+
+    document.getElementById('languageButton').addEventListener('click', function () {
+        const menu = document.getElementById('languageDropdown');
+        menu.classList.toggle('show');
+    });
+</script>
+
+</html>

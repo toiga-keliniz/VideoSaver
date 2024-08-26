@@ -1,0 +1,21 @@
+{
+  "name": "YouVideoDownloader",
+  "short_name": "YouVideo",
+  "description": "Бесплатно скачивайте видео с YouTube в качестве до 8K. Быстрый онлайн конвертер YouTube в MP3. Поддержка 4K, HD. Без регистрации. Скачивайте видео и музыку с YouTube легко!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a1a",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+}

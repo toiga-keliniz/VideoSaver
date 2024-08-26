@@ -1,0 +1,21 @@
+{
+  "name": "YouVideoDownloader",
+  "short_name": "YouVideo",
+  "description": "Download YouTube videos for free in quality up to 8K. Fast online YouTube to MP3 converter. Supports 4K, HD. No registration. Easily download videos and music from YouTube!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a1a",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+}
