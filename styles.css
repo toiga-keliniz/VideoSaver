@@ -10,11 +10,17 @@ body {
     padding: 0;
 }
 
+.adblock {
+    position: relative;
+    z-index: 1;
+}
+
 .toolbar {
     background-color: rgba(34, 34, 34, 0.7);
     padding: 15px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     display: flex;
+    z-index: 100;
     align-items: center;
     justify-content: space-between;
     backdrop-filter: blur(10px);
