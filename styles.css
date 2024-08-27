@@ -113,22 +113,6 @@ body {
     .lang-icon {
         display: inline;
     }
-
-    .adblock #banner {
-        display: block;
-    }
-
-    .adblock #tape {
-        display: none;
-    }
-}
-
-.adblock #banner {
-    display: none;
-}
-
-.adblock #tape {
-    display: block;
 }
 
 .content {

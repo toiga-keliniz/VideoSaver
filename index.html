@@ -55,16 +55,20 @@
 </head>
 
 <body>
-    <!-- Yandex.RTB R-A-11759020-3 -->
-    <script>
-        window.yaContextCb.push(() => {
-            Ya.Context.AdvManager.render({
-                "blockId": "R-A-11759020-3",
-                "type": "fullscreen",
-                "platform": "touch"
-            })
-        })
-    </script>
+    <adblock class="adblock">
+        <div id="fullscreen">
+            <!-- Yandex.RTB R-A-11759020-3 -->
+            <script>
+                window.yaContextCb.push(() => {
+                    Ya.Context.AdvManager.render({
+                        "blockId": "R-A-11759020-3",
+                        "type": "fullscreen",
+                        "platform": "touch"
+                    })
+                })
+            </script>
+        </div>
+    </adblock>
     <header class="toolbar">
         <a href="/" class="site-name">YouVideoDownloader</a>
         <div class="language-selector">
@@ -79,25 +83,33 @@
         </div>
     </header>
     <main class="content">
-        <!-- Yandex.RTB R-A-11759020-1 -->
-        <div id="yandex_rtb_R-A-11759020-1"></div>
-        <script>
-            window.yaContextCb.push(() => {
-                Ya.Context.AdvManager.render({
-                    "blockId": "R-A-11759020-1",
-                    "renderTo": "yandex_rtb_R-A-11759020-1"
-                })
-            })
-        </script>
+        <adblock class="adblock">
+            <div id="banner">
+                <!-- Yandex.RTB R-A-11759020-1 -->
+                <div id="yandex_rtb_R-A-11759020-1">
+                    <script>
+                        window.yaContextCb.push(() => {
+                            Ya.Context.AdvManager.render({
+                                "blockId": "R-A-11759020-1",
+                                "renderTo": "yandex_rtb_R-A-11759020-1"
+                            })
+                        })
+                    </script>
+                </div>
+            </div>
+        </adblock>
         <section class="info-section">
             <h2>Instructions</h2>
-            <p><span class="highlight">1. Paste the video URL</span> — First, copy the link to the video on YouTube you
+            <p><span class="highlight">1. Paste the video URL</span> — First, copy the link to the video on YouTube
+                you
                 want to download. Paste it into the input field on our site.</p>
-            <p><span class="highlight">2. Select format</span> — After pasting the link, choose the desired format and
+            <p><span class="highlight">2. Select format</span> — After pasting the link, choose the desired format
+                and
                 video quality. We support various formats, including MP4 and MP3.</p>
             <p><span class="highlight">3. Click "Download"</span> — Click the button to start the download process.
                 Depending on the selected format and file size, it may take some time.</p>
-            <p><span class="highlight">4. Download the file</span> — Once processing is complete, a download link will
+            <p><span class="highlight">4. Download the file</span> — Once processing is complete, a download link
+                will
                 appear. Click it to download the video to your device.</p>
         </section>
 
@@ -109,11 +121,13 @@
         <section class="info-section">
             <h2>About Our Site</h2>
             <p><span class="highlight">YouVideoDownloader</span> provides you with the ability to download YouTube
-                videos in exceptional quality, including 4K and 8K resolutions. Enjoy stunning clarity and detail on any
+                videos in exceptional quality, including 4K and 8K resolutions. Enjoy stunning clarity and detail on
+                any
                 device.</p>
             <p>Our service also offers a simple way to convert videos to audio files. You can choose from various
                 formats, including popular MP3 and WAV, to create the perfect audio collection.</p>
-            <p>We strive to make the download and conversion process as convenient and fast as possible. In just a few
+            <p>We strive to make the download and conversion process as convenient and fast as possible. In just a
+                few
                 clicks, you can download and convert files with ease.</p>
         </section>
         <adblock class="adblock">
@@ -121,18 +135,6 @@
                 <!-- Yandex.RTB -->
                 <script>window.yaContextCb = window.yaContextCb || []</script>
                 <script src="https://yandex.ru/ads/system/context.js" async></script>
-            </div>
-            <div id="tape">
-                <div id="yandex_rtb_R-A-11759020-2"></div>
-                <script>
-                    window.yaContextCb.push(() => {
-                        Ya.Context.AdvManager.render({
-                            "blockId": "R-A-11759020-2",
-                            "renderTo": "yandex_rtb_R-A-11759020-2",
-                            "type": "feed"
-                        })
-                    })
-                </script>
             </div>
         </adblock>
     </main>
