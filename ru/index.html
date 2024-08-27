@@ -31,6 +31,8 @@
     <meta name="theme-color" content="#1a1a1a">
     <link rel="stylesheet" href="/styles.css">
     <script src="/language-redirect.js"></script>
+    <script>window.yaContextCb = window.yaContextCb || []</script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-42KZEEHR3R"></script>
     <script>
@@ -54,6 +56,20 @@
 </head>
 
 <body>
+    <adblock class="adblock">
+        <div id="fullscreen">
+            <!-- Yandex.RTB R-A-11759020-3 -->
+            <script>
+                window.yaContextCb.push(() => {
+                    Ya.Context.AdvManager.render({
+                        "blockId": "R-A-11759020-3",
+                        "type": "fullscreen",
+                        "platform": "touch"
+                    })
+                })
+            </script>
+        </div>
+    </adblock>
     <header class="toolbar">
         <a href="/ru/index.html" class="site-name">YouVideoDownloader</a>
         <div class="language-selector">
@@ -69,6 +85,21 @@
     </header>
 
     <main class="content">
+        <adblock class="adblock">
+            <div id="banner">
+                <!-- Yandex.RTB R-A-11759020-1 -->
+                <div id="yandex_rtb_R-A-11759020-1">
+                    <script>
+                        window.yaContextCb.push(() => {
+                            Ya.Context.AdvManager.render({
+                                "blockId": "R-A-11759020-1",
+                                "renderTo": "yandex_rtb_R-A-11759020-1"
+                            })
+                        })
+                    </script>
+                </div>
+            </div>
+        </adblock>
         <section class="info-section">
             <h2>Инструкция</h2>
             <p><span class="highlight">1. Вставьте URL видео</span> — Сначала скопируйте ссылку на видео с YouTube,
@@ -96,7 +127,20 @@
             <p>Мы делаем всё возможное, чтобы процесс скачивания и конвертации был максимально удобным и быстрым. В
                 несколько кликов вы сможете скачать и преобразовать файлы, без каких-либо сложностей.</p>
         </section>
-
+        <adblock class="adblock">
+            <div id="banner">
+                <!-- Yandex.RTB R-A-11759020-1 -->
+                <div id="yandex_rtb_R-A-11759020-1"></div>
+                <script>
+                    window.yaContextCb.push(() => {
+                        Ya.Context.AdvManager.render({
+                            "blockId": "R-A-11759020-1",
+                            "renderTo": "yandex_rtb_R-A-11759020-1"
+                        })
+                    })
+                </script>
+            </div>
+        </adblock>
     </main>
 
     <footer class="footer">
