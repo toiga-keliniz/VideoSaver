@@ -114,9 +114,21 @@ body {
         display: inline;
     }
 
-    .tape {
+    .adblock #banner {
+        display: block;
+    }
+
+    .adblock #tape {
         display: none;
     }
+}
+
+.adblock #banner {
+    display: none;
+}
+
+.adblock #tape {
+    display: block;
 }
 
 .content {
