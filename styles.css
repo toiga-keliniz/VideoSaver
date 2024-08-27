@@ -34,6 +34,7 @@ body {
     font-weight: bold;
     text-decoration: none;
     margin-right: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .language-selector {
@@ -52,6 +53,7 @@ body {
     transition: background 0.3s, box-shadow 0.3s;
     backdrop-filter: blur(1px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #languageButton:hover {
