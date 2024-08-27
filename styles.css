@@ -113,6 +113,10 @@ body {
     .lang-icon {
         display: inline;
     }
+
+    .tape {
+        display: none;
+    }
 }
 
 .content {

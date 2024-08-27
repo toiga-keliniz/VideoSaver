@@ -67,15 +67,6 @@
     </script>
     <header class="toolbar">
         <a href="/" class="site-name">YouVideoDownloader</a>
-        <!-- Yandex.RTB R-A-11759020-5 -->
-        <script>
-            window.yaContextCb.push(() => {
-                Ya.Context.AdvManager.render({
-                    "blockId": "R-A-11759020-5",
-                    "type": "topAd"
-                })
-            })
-        </script>
         <div class="language-selector">
             <button id="languageButton" class="button">
                 <span class="lang-text">Language</span>
@@ -125,30 +116,28 @@
             <p>We strive to make the download and conversion process as convenient and fast as possible. In just a few
                 clicks, you can download and convert files with ease.</p>
         </section>
-        <!-- Yandex.RTB R-A-11759020-2 -->
-        <div id="yandex_rtb_R-A-11759020-2"></div>
-        <script>
-            window.yaContextCb.push(() => {
-                Ya.Context.AdvManager.render({
-                    "blockId": "R-A-11759020-2",
-                    "renderTo": "yandex_rtb_R-A-11759020-2",
-                    "type": "feed"
-                })
-            })
-        </script>
+        <adblock class="adblock">
+            <div id="banner">
+                <!-- Yandex.RTB -->
+                <script>window.yaContextCb = window.yaContextCb || []</script>
+                <script src="https://yandex.ru/ads/system/context.js" async></script>
+            </div>
+            <div id="tape">
+                <div id="yandex_rtb_R-A-11759020-2"></div>
+                <script>
+                    window.yaContextCb.push(() => {
+                        Ya.Context.AdvManager.render({
+                            "blockId": "R-A-11759020-2",
+                            "renderTo": "yandex_rtb_R-A-11759020-2",
+                            "type": "feed"
+                        })
+                    })
+                </script>
+            </div>
+        </adblock>
     </main>
 
     <footer class="footer">
-        <!-- Yandex.RTB R-A-11759020-4 -->
-        <script>
-            window.yaContextCb.push(() => {
-                Ya.Context.AdvManager.render({
-                    "blockId": "R-A-11759020-4",
-                    "type": "floorAd",
-                    "platform": "touch"
-                })
-            })
-        </script>
         <p>YT Downloader 2024. All rights reserved.</p>
     </footer>
 
