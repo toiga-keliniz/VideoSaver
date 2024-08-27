@@ -34,13 +34,12 @@ body {
     font-weight: bold;
     text-decoration: none;
     margin-right: 10px;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .language-selector {
     position: relative;
     display: inline-block;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #languageButton {
@@ -54,7 +53,7 @@ body {
     transition: background 0.3s, box-shadow 0.3s;
     backdrop-filter: blur(1px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 #languageButton:hover {
@@ -86,7 +85,6 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .dropdown-content a:hover {
